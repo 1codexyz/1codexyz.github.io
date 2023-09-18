@@ -13,3 +13,13 @@ params:
     - country: China
       address: Shanghai
       email: info@1code.xyz
+
+  foundingMembers:
+    - name: Samyro
+      avatar: /images/samyro.jpeg
+      github: samyro
+      title: Chief Happiness Officer
+    - name: Ciel
+      avatar: /images/imwithye.png
+      github: imwithye
+      title: Wizard of Light Bulb Moments

@@ -1,7 +1,43 @@
 {{ define "content" }}
 
-<div class="container">
-    About
+{{ partial "hero.html" (dict "HeroBackgroundImage" "/images/about.jpg" "HeroTitle" "About" "HeroDescription"
+"About Our Team Members.") }}
+
+<div class="container my-5">
+    <div class="h1">About</div>
+
+    1code was established by two experienced programmers, aiming to help people save time in their daily lives through a
+    series of small tools. We focus on small tools and creative ideas, striving to enhance life with our simple yet
+    beautiful apps, and free people from their workloads.
 </div>
+
+<div class="container my-5">
+    <div class="h1">Founding Members</div>
+    <div class="d-flex flex-wrap">
+        {{ range .Site.Params.foundingMembers }}
+        <div class="m-3">
+            <img class="my-2 black-and-white" src="{{ .avatar }}"
+                style="border-radius:50%; width:200px; height: 200px;">
+            <div class="h3">{{ .name }}</div>
+            <a href="https://github.com/{{ .github }}" target="_blank" style="text-decoration: none;">@{{ .github }}</a>
+            <div>{{ .title }}</div>
+        </div>
+        {{ end }}
+    </div>
+</div>
+
+<!-- <div class="container my-5">
+    <div class="h1">Team Members</div>
+    <div class="d-flex flex-wrap">
+        {{ range .Site.Params.teamMembers }}
+        <div class="m-3">
+            <img class="my-2 black-and-white" src="{{ .avatar }}"
+                style="border-radius:50%; width:200px; height: 200px;">
+            <div class="h3">{{ .name }}</div>
+            <div>{{ .title }}</div>
+        </div>
+        {{ end }}
+    </div>
+</div> -->
 
 {{ end }}
