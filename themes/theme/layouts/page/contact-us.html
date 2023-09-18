@@ -1,7 +1,51 @@
 {{ define "content" }}
 
-<div class="container">
-    Contact Us
+{{ partial "hero.html" (dict "HeroBackgroundImage" "/images/about.jpg" "HeroTitle" "Get in Touch" "HeroDescription" `If
+you have great ideas, or just want to grab a coffee with us, feel free to contact us.`) }}
+
+<div class="container my-5">
+    <div class="w-100 text-center my-3">
+        <div style="font-size: 3rem;">Offices</div>
+    </div>
+
+    {{ range .Site.Params.offices }}
+    <div class="row align-items-center my-3">
+        <div class="col-md-6 my-2 text-center">
+            <img class="rounded" src="{{ .map }}" style="height: 320px;">
+        </div>
+        <div class="col-md-6 my-2">
+            <div class="h1">{{ .country }}</div>
+            <div class="my-3">
+                <div class="h5">Address</div>
+                <div>{{ .address }}</div>
+            </div>
+
+            <!-- <div class="my-3">
+                <div class="h5">Phone</div>
+                <div>{{ .phone }}</div>
+            </div> -->
+
+            <div class="my-3">
+                <div class="h5">Email</div>
+                <div>{{ .email }}</div>
+            </div>
+        </div>
+    </div>
+    {{ end }}
 </div>
+
+<!-- <div class="container my-5">
+    <div class="h1">Team Members</div>
+    <div class="d-flex flex-wrap">
+        {{ range .Site.Params.teamMembers }}
+        <div class="m-3">
+            <img class="my-2 black-and-white" src="{{ .avatar }}"
+                style="border-radius:50%; width:200px; height: 200px;">
+            <div class="h3">{{ .name }}</div>
+            <div>{{ .title }}</div>
+        </div>
+        {{ end }}
+    </div>
+</div> -->
 
 {{ end }}

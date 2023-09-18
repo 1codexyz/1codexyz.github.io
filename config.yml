@@ -11,7 +11,8 @@ markup:
 params:
   offices:
     - country: China
-      address: Shanghai
+      map: /images/map.png
+      address: Level 9, 777 Wanrong Road, Jing'an District, Shanghai City
       email: info@1code.xyz
 
   foundingMembers:
