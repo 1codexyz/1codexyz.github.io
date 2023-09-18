@@ -1,7 +1,32 @@
 {{ define "content" }}
 
-<div class="container">
-    <h1>Hello World!</h1>
+<div class="w-100 container-fluid text-light d-flex flex-column justify-content-center background-image" style="
+    min-height: 600px;
+    background-color: rgb(6, 6, 6);
+    background-image: url('/images/hero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  ">
+    <div class="container" style="z-index: 1000;">
+        <div class="mx-auto p-5" style="max-width: 1440px">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                </div>
+                <div class="col-lg-6">
+                    <div class="mb-5">
+                        <div class="h1" style="font-size: 3rem;">
+                            Enjoy Life, Not Work
+                        </div>
+                    </div>
+
+                    <div class="h5">
+                        Tools, Apps, Creative Ideas for Everyone.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 {{ end }}
