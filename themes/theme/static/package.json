@@ -1,0 +1,10 @@
+{
+  "name": "static",
+  "version": "1.0.0",
+  "description": "1code - Website Dependencies",
+  "author": "1code",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.2"
+  }
+}
