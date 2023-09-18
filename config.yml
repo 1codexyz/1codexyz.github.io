@@ -1,0 +1,15 @@
+baseURL: "https://1code-xyz.github.io"
+languageCode: "en-us"
+title: "1code - Enjoy Life, Not Work"
+theme: "theme"
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+params:
+  offices:
+    - country: China
+      address: Shanghai
+      email: info@1code.xyz
